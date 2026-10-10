@@ -16,6 +16,8 @@ Banked harvest survives respawn. Larger cicadas move more slowly. Rounds last
 three minutes, followed by a ten-second intermission. Solo progress is saved
 on the device; shared gardens are temporary.
 
+The Robotcyb reference is an unobtrusive, cached field backdrop. Protected locations are drawn as wooden beehives.
+
 The multiplayer map expands from 1000×540 to 2080×540 as population grows:
 1–3 players have one house, 4–6 have two, 7–9 three, 10–12 four. New sectors add
 pollen; replenishment capacity also scales with participants. The map does
@@ -94,6 +96,10 @@ browser bundle is loaded locally **only at checkout**, not while playing.
 Tests exercise game rules, daily save/restore, signatures, receipt validation,
 replay protection, inventory persistence and serialized transfer instructions.
 Live testing uses ephemeral test identities and never moves funds.
+
+## Checkout availability
+
+Real checkout is guarded until the operator sets the `SOLANA_RPC_URL` Worker secret to a dedicated mainnet RPC endpoint. Browsing the workshop, wallet sign-in and room chat remain available. Public RPCs throttled indexed receipt reads during deployment; no real purchases were performed. Use a free RPC plan without enabling paid autoscaling. Never put the RPC key in Git or browser JavaScript.
 
 ## Deploy
 
