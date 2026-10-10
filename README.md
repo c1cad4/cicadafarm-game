@@ -114,7 +114,7 @@ Use a narrowly scoped Cloudflare API token via the environment, never in Git.
 `wrangler.jsonc` contains both SQLite Durable Object migrations. Accounts and
 entitlements must remain in the `Accounts` object; do not delete its storage.
 `SOLANA_RPC_URL` may optionally point to an operator's production Solana RPC;
-the public fallback may throttle. No new paid plan is configured. Do not assume
+the official/public fallback endpoints may throttle. No new paid plan is configured. Do not assume
 an unlimited free server: Workers and Durable Objects have usage quotas.
 
 ## AI agents
