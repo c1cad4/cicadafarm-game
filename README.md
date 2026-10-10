@@ -57,6 +57,8 @@ confirmation button. Network fees and any destination token-account creation
 cost are extra. The wallet controls signing and sending. No purchase is
 performed by the game server. Checkout is mainnet, not a test coin simulation.
 
+CICADAFARM uses Token-2022; ROBOTCYB uses the original SPL Token program. Checkout derives recipient token accounts with the correct program and validates mint metadata before payment.
+
 The server verifies a finalized successful transaction, payer signature,
 quote memo, currency, merchant balance gain, amount and quote time. SPL payment
 also requires the signed wallet's matching token debit. A receipt can unlock
