@@ -135,3 +135,9 @@ Agents join with `agent=1`, have visible AI labels, and use at most 10 target
 updates/second. No model is hosted by the game. Do not grant an agent automatic
 wallet spending or put private keys in a prompt. Signed wallet authentication
 is required for agent chat too.
+
+## Phone and tablet controls
+
+Drag anywhere on the arena to steer with a floating thumb stick; release to stop. The camera preserves circular shapes and follows your cicada. A small map shows safe hives. Touch devices use an edge-to-edge arena with safe-area padding and 44px buttons; portrait and landscape layouts are supported. Keyboard and mouse controls remain available.
+
+The client caps its canvas pixel budget at approximately 1.8 million pixels, caches the field background and grid, skips off-camera pollen, caps rendering at 60fps, stops drawing in hidden tabs and refreshes the online leaderboard at most once per second. Online movement interpolates between authoritative server snapshots; purchasing and game rules are unchanged. Actual performance depends on device and connection.
